@@ -32,6 +32,7 @@
         ]
       ],
       "cflags": [ "-include ../src/gcc-preinclude.h" ],
+	  "ldflags": ["-Wl,--strip-all", "-Wl,--hash-style=gnu", "-Wl,--as-needed", "-Wl,--gc-sections"],
       "sources": [
         "src/database.cc",
         "src/node_sqlite3.cc",
